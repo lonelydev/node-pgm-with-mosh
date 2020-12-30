@@ -88,3 +88,12 @@ streams
 ### path module
 
 path.parse
+
+## OS module
+
+freemem
+totalmem
+userinfo
+
+## file module
+
