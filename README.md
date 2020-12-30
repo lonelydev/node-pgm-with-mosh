@@ -17,4 +17,7 @@ in node, every file is a module and functions and variables in a file are not ex
 
 ### Create a module
 
-create a file. 
+create a file - logger.js
+
+export some methods and variables from the file. 
+use logger.js in another file.
