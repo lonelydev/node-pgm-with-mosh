@@ -76,3 +76,15 @@ This is called the module wrapper function.
 The signature has probably changed with newer versions of code. 
 
 get rid of the syntax error line in the uselogger.js
+
+## Some key modules
+
+filesystem
+process
+path
+query strings
+streams
+
+### path module
+
+path.parse
