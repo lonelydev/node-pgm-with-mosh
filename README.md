@@ -71,6 +71,8 @@ SyntaxError: Unexpected token ;
 
 ```
 
-Node always executes your script within a function wrapper. The signature has probably changed with newer versions of code. 
+Node always executes your script within a function wrapper. 
+This is called the module wrapper function.
+The signature has probably changed with newer versions of code. 
 
 get rid of the syntax error line in the uselogger.js
