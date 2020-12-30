@@ -21,3 +21,7 @@ create a file - logger.js
 
 export some methods and variables from the file. 
 use logger.js in another file.
+
+### Using a module from another file
+
+To load a module into your js file, you need to use the `require('modulenamepath')`

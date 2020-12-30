@@ -10,8 +10,7 @@ function log(message){
 module.exports.log = log;
 module.exports.endpoint = url;
 
-console.log(module);
-
+// console.log(module);
 // [2020-12-30 16:33:13][/d/Code/nodejs/youtube/pgmwithmosh] (master)> node logger.js
 // Module {
 //   id: '.',
