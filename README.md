@@ -97,3 +97,5 @@ userinfo
 
 ## file module
 
+check out some of the sync and async methods. 
+by default the methods are async. 
