@@ -25,3 +25,52 @@ use logger.js in another file.
 ### Using a module from another file
 
 To load a module into your js file, you need to use the `require('modulenamepath')`
+
+### How does node run programs?
+
+Edit logger.js
+create syntax error. 
+put a line:
+`var x=;`
+
+```bash
+[2020-12-30 16:56:06][/d/Code/nodejs/youtube/pgmwithmosh] (master)> node use-logger.js
+D:\Code\nodejs\youtube\pgmwithmosh\use-logger.js:3
+var x=;
+      ^
+
+SyntaxError: Unexpected token ';'
+    at wrapSafe (internal/modules/cjs/loader.js:1054:16)
+    at Module._compile (internal/modules/cjs/loader.js:1102:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
+    at internal/main/run_main_module.js:17:47
+```
+Newer version of node when compared to the version that Mosh is using in the video, hence I don't get the same result shown by mosh. 
+Apparently earlier, node used to give away how the code was being executed. 
+
+in my console output you can see that the code is executed inside a method called:
+`wrapSafe` which intern is inside several other methods finally in `run_main_module.js`
+
+Originally the function signature of the method that ran the code in your script would be:
+
+```javascript
+
+(function(exports, require, module, __filename, __direname){
+    var x=;
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext(vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    ...
+    ...
+})
+
+```
+
+Node always executes your script within a function wrapper. The signature has probably changed with newer versions of code. 
+
+get rid of the syntax error line in the uselogger.js
