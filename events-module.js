@@ -1,6 +1,7 @@
 
 // this is a class
 const EventEmitter = require('events');
+const logger = require('./logger');
 
 // this is an instance of the event emitter class
 const emitter = new EventEmitter();
@@ -19,7 +20,7 @@ emitter.emit('messageLogged');
 emitter.emit('messageLogged');
 emitter.emit('messageLogged');
 emitter.on('messageLogged', function() {
-    console.log('listener number 2 called');
+    logger.log('listener number 2 called');
   });
 emitter.emit('messageLogged');
 emitter.emit('messageLogged');
