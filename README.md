@@ -1,5 +1,8 @@
 # Getting started with Nodejs
 
+Although I can read and understand Javascript I was in no position to explain node, what it is in simple terms to let us say for example to a five year old. 
+And to me, if you can't explain it to your grandma, you haven't understood it properly. This made me search for several  articles and videos online and go through them and finally having come across Mosh's intro to node, I decided to follow along and this was the result. 
+
 ## Tutorial for beginners by Mosh
 
 Following https://www.youtube.com/watch?v=TlB_eWDSMt4
