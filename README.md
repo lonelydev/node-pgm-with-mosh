@@ -89,13 +89,19 @@ streams
 
 path.parse
 
-## OS module
+### OS module
 
 freemem
 totalmem
 userinfo
 
-## file module
+### file module
 
 check out some of the sync and async methods. 
 by default the methods are async. 
+
+## Events
+
+How to work with events module?
+Register an event listener and then emit that event. 
+The event listener's method would be invoked everytime an event of that type is emitted
