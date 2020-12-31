@@ -105,3 +105,13 @@ by default the methods are async.
 How to work with events module?
 Register an event listener and then emit that event. 
 The event listener's method would be invoked everytime an event of that type is emitted
+
+## Extending EventEmitter
+
+Soemtimes, you want your class to do more than just what it does and also be able to emit events. 
+In this case, extending event emitter lets you not only emit but also listen to events and handle them accordingly. 
+
+## HttpModule
+
+You cannot build a web app without some http requests. 
+This module is crucial for building such apps. 
